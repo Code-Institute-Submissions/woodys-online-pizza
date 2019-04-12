@@ -1,0 +1,81 @@
+/* ----------------- Site Wide */
+body {
+    background-image: url('/static/images/pizzabg.jpg');
+    background-size: 33.3%;
+}
+
+hr{
+    width: 70%;
+}
+
+.container{
+    width: 70%;
+    background-color: #ffffff;
+}
+
+
+/* ---------------- Navbar */
+.btn_small {
+    height: 64px;
+    width: 160px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}
+
+
+/* ---------------- Heading */
+.heading-text{
+    font-size: 54px;
+    color: #0000ff;
+    text-align: center;
+}
+
+.heading-explain{
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+/* ---------------- Content */
+.task_header {
+    margin-top: 5px;
+}
+
+#loginbox{
+    width: 200px;
+}
+
+.login-buttons{
+    text-align: center;
+}
+
+.checkout-text{
+    font-size: 24px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.signup{
+    text-align: left;
+    font-size: large;
+}
+
+#topping{
+    text-align: left;
+}
+
+.topping{
+    text-align: left;
+}
+
+
+/* -------------------- Footer */
+#footer-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
