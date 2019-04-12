@@ -1,0 +1,17 @@
+{% extends 'base.html'%} 
+{% block content %}
+
+<div class="container">  
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                <strong>Hi {{ firstname }}. You may proceed to build your pizza!</strong><br>
+                <form action="{{ url_for('toppings') }}"  method="POST">
+                    <input type="hidden" name="thename" value="{{ username }}"/>
+                    <a href="{{url_for('toppings')}}"><button type="submit" class="waves-effect waves-light btn btn_small">Proceed!</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

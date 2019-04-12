@@ -1,0 +1,46 @@
+{% extends 'base.html'%} 
+{% block content %}
+
+<div class="container">  
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                <h2>Hi {{ username }}</h2>
+                <h2>Time to choose your toppings!</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-4 col-lg-4">
+            <div class="heading-explain">
+                <span>&nbsp;</span>
+            </div>
+        </div>
+        
+        <div class="col-xs-11 col-sm-11 col-md-8 col-lg-8">
+            <div class="heading-explain" id="topping">
+                <form action="{{ url_for('checkout') }}" method="POST">
+                    <ul>
+                        {% for topping in toppings %}
+                            <div>
+                                <li><input name="the_toppings" type="checkbox" value={{topping.name}}>{{topping.name}}</li>
+                            </div>
+                        {% endfor %}
+                    </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">   
+                <input type="hidden" name="username" value="{{ username }}"/><br>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Make it!</button><br><br>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock %}

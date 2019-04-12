@@ -1,0 +1,43 @@
+{% extends 'base.html'%} 
+{% block content %}
+
+<div class="container">  
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                <h2>To Sign Up...Please enter the following info!</h2><br>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-4 col-lg-4">
+            <div class="heading-explain">
+                <span>&nbsp;</span>
+            </div>
+        </div>
+        
+        <div class="col-xs-11 col-sm-11 col-md-8 col-lg-8">
+            <div class="signup">
+                <form action="{{ url_for('create') }}" method="POST">
+                    <input type="text" name="username"/>Username<br>
+                    <input type="text" name="firstname"/>First Name<br>
+                    <input type="text" name="lastname"/>Last Name<br>
+                    <input type="text" name="address"/>Address<br>
+                    <input type="text" name="city"/>City<br>
+                    <input type="text" name="zip"/>Zip<br>
+                    <input type="text" name="phone"/>Phone Number<br><br>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                <button class="btn waves-effect waves-light" type="submit">Sign Me Up!</button><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

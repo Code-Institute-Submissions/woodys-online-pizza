@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-text">
+                <strong>Welcome to Woodys Online Pizza</strong>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                Once you login, or signup, you will proceed to choose your toppings.<br>
+                When you are done, you will confirm your order<br>
+                and we will deliver your pizza within 45 minutes!<br><br>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="login-buttons">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a href="{{url_for('login')}}"><button type="submit" class="waves-effect waves-light btn btn_small">Login</button></a><br>
+                <a href="{{url_for('signup')}}"><button type="submit" class="waves-effect waves-light btn btn_small">Sign up</button></a><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}       
+

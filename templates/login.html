@@ -1,0 +1,42 @@
+{% extends 'base.html'%} {% block content %}
+
+<div class="container">  
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="heading-explain">
+                <h2>Enter your username for account verification</h2><br>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+            <div class="heading-explain">
+                <form action="{{ url_for('login') }}"  method="POST">
+                    <input type="text" name="username" id="loginbox" /><br>
+                    <a href="{{url_for('login')}}"><button type="submit" class="waves-effect waves-light btn btn_small">Submit</button></a><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+            <div class="heading-explain">    
+            {% if the_user %}
+               {% for user in the_user %}  
+                <div>
+                    <br><strong>Hi {{ user.firstname }}. You may proceed to build your pizza!</strong>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <form action="{{ url_for('toppings') }}"  method="POST">
+                            <input type="hidden" name="thename" value="{{ user.username }}"/><br>
+                            <button type="submit" class="waves-effect waves-light btn btn_small">Proceed!</button><br><br>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+    </div>
+ </div>  
+
+{% endblock %}
