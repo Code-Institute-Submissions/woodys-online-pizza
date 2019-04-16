@@ -68,14 +68,3 @@ hr{
 .topping{
     text-align: left;
 }
-
-
-/* -------------------- Footer */
-#footer-text{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #000000;
-    background-color: #ffffff;
-    text-align: center;
-}
