@@ -38,9 +38,9 @@ The site performed well with all devices.
 A live working instance of this site can be found at...https://woodys-online-pizza.herokuapp.com/
 
 # CREDITS:
-Credit goes out to CodeInstitute for the class work.
-Credit to Cloud 9 for the dev IDE for free.
-Credit to Chris Zielinski for mentoring help.
+Credit goes out to CodeInstitute for the class work.<br>
+Credit to Cloud 9 for the dev IDE for free.<br>
+Credit to Chris Zielinski for mentoring help.<br>
 Credit to W3Schools for code help.
 
 # ABOUT THE AUTHOR
