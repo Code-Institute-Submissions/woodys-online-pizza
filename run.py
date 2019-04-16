@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for, request
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -34,7 +34,7 @@ def create():
 @app.route('/toppings', methods=['GET', 'POST'])
 def toppings():
     username = request.form.get('thename')
-    return render_template("toppings.html", toppings=mongo.db.toppings.find(), username = username)
+    return render_template("toppings.html", toppings=mongo.db.toppings.find().sort('name', 1), username = username)
     
 @app.route('/checkout', methods=['GET', 'POST'])
 def checkout():
