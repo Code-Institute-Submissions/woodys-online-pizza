@@ -35,7 +35,7 @@ I have an ancient iTouch, two iPhones, 3 iPads, an Android Tablet, two laptops a
 The site performed well with all devices.
 
 # DEPLOYMENT
-A live working instance of this site can be found at...https://
+A live working instance of this site can be found at...https://woodys-online-pizza.herokuapp.com/
 
 # CREDITS:
 Credit goes out to CodeInstitute for the class work.
